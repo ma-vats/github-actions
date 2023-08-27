@@ -1,0 +1,13 @@
+name: checkout-workflow
+on: [push]
+
+jobs:
+  checkout_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout_branch
+        run: ls -a
+      - uses: actions/checkout@v3
+      - name: checkout_branch
+        run: ls -a
+
