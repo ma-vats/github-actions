@@ -8,6 +8,8 @@ jobs:
       - name: checkout_branch
         run: ls -a
       - uses: actions/checkout@v3
+        with:
+            repository: 'https://github.com/ma-vats/selenium-sf-maven.git'
       - name: checkout_branch
         run: ls -a
 
