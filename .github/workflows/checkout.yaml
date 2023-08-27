@@ -9,7 +9,7 @@ jobs:
         run: ls -a
       - uses: actions/checkout@v3
         with:
-            repository: 'https://github.com/ma-vats/selenium-sf-maven.git'
+            repository: 'https://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@github.com/ma-vats/selenium-sf-maven.git'
       - name: checkout_branch
         run: ls -a
 
