@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: using_expressions_steps
         run: |
-          echo: ls -1
+          echo: ls -a
           echo: ${{ toJson(github)}} 
           echo: ${{ toJson(job)}} 
           echo: ${{ toJson(secrets)}} 
