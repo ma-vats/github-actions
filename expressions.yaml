@@ -1,0 +1,14 @@
+name: checkout-workflowexpressions
+on: [push, pull_request, issues, workflow_dispatch]
+
+jobs:
+  using_experssions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using_expressions_steps
+        run: |
+          echo: ls -1
+          echo: ${{ toJson(github)}} 
+          echo: ${{ toJson(job)}} 
+          echo: ${{ toJson(secrets)}} 
+          echo: ${{ toJson(steps)}}
